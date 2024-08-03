@@ -93,3 +93,11 @@ form li {
   gap: 20px;
   margin-top: 40px;
 }
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

@@ -24,6 +24,24 @@ function deleteBook(i) {
   addBookToLibrary(myLibrary);
 }
 
+// Toggles form display
+let displayState = 0;
+const form = document.querySelector("#form");
+
+function toggleDisplay() {
+  if (displayState == 0) {
+    form.classList.remove("visible");
+    form.classList.add("hidden");
+    displayState = 1;
+  } else {
+    form.classList.remove("hidden");
+    form.classList.add("visible");
+    displayState = 0;
+  }
+}
+const displayFormButton = document.querySelector(".button-display-form");
+displayFormButton.addEventListener("click", toggleDisplay);
+
 // Renders book
 const booksContainer = document.querySelector(".book-display-container");
 
