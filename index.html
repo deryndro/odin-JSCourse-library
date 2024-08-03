@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <button class="button-display-form">Add Book</button>
+        <div class="form-container">
+          <form action="" id="form">
+            <ul>
+              <li>
+                <label for="'input-title">Book title</label
+                ><input
+                  id="input-title"
+                  name="input_title"
+                  type="text"
+                  required
+                />
+              </li>
+              <li>
+                <label for="input-author">Author</label
+                ><input
+                  id="input-author"
+                  name="input_author"
+                  type="text"
+                  required
+                />
+              </li>
+              <li>
+                <label for="input-pages">Pages</label
+                ><input
+                  id="input-pages"
+                  name="input_pages"
+                  type="number"
+                  required
+                />
+              </li>
+              <li>
+                <legend>Have you read the book?</legend>
+                <div>
+                  <label for="rad1"
+                    ><input
+                      id="rad1"
+                      type="radio"
+                      value="true"
+                      name="isRead"
+                      required
+                    />Yes</label
+                  >
+                  <label for="rad2"
+                    ><input
+                      id="rad2"
+                      type="radio"
+                      value="false"
+                      name="isRead"
+                      required
+                      checked="checked"
+                    />Not yet
+                  </label>
+                </div>
+              </li>
+              <input type="submit" id="submit-form" value="Submit form" />
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="book-display-container"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
